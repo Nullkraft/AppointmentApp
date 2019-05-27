@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SharedPrefsTest</string>
+    <string name="SharedPrefsFName">mypref</string>
+    <string name="appointment">Appointment</string>
+    <string name="notesColumn">Appointments or Notes</string>
+    <string name="timeColumn">Time</string>
+    <string name="dateColumn">Date</string>
+    <string name="save">Save</string>
+</resources>

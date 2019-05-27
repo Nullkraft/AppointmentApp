@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:text="@string/notesColumn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notesColumnTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/timeColumnTitle"
+            android:layout_marginEnd="24dp"/>
+    <TextView
+            android:text="@string/timeColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeColumnTitle" app:layout_constraintEnd_toStartOf="@+id/dateColumnTitle"
+            android:layout_marginEnd="24dp" app:layout_constraintBaseline_toBaselineOf="@+id/notesColumnTitle"/>
+    <TextView
+            android:text="@string/dateColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateColumnTitle" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/timeColumnTitle"/>
+    <Button
+            android:text="@string/save"
+            android:layout_width="94dp"
+            android:layout_height="37dp"
+            android:id="@+id/buttonSavePrefs"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment1"
+            android:hint="@string/appointment" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/notesColumnTitle"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toStartOf="@+id/time1"
+            android:importantForAutofill="no"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment2"
+            android:hint="@string/appointment" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/appointment1"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time2"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment3"
+            app:layout_constraintTop_toBottomOf="@+id/appointment2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:hint="@string/appointment" android:importantForAutofill="no"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toStartOf="@+id/time3"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment4"
+            app:layout_constraintTop_toBottomOf="@+id/appointment3" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time4"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment5"
+            app:layout_constraintTop_toBottomOf="@+id/appointment4" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time5"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment6"
+            app:layout_constraintTop_toBottomOf="@+id/appointment5" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time6"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment7"
+            app:layout_constraintTop_toBottomOf="@+id/appointment6" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time7"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment8"
+            app:layout_constraintTop_toBottomOf="@+id/appointment7" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time8"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment9"
+            app:layout_constraintTop_toBottomOf="@+id/appointment8" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time9"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment10"
+            app:layout_constraintTop_toBottomOf="@+id/appointment9" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="@string/appointment"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time10"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/appointment11"
+            android:hint="@string/appointment" app:layout_constraintTop_toBottomOf="@+id/appointment10"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/time11"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date1"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:hint="@string/dateColumn"
+            android:importantForAutofill="no" app:layout_constraintBaseline_toBaselineOf="@+id/time1"
+            android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date2" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time2" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date3" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time3" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date4" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time4" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date5" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time5" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date6" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time6" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date7" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time7" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date8" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time8" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date9" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time9" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date10" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time10" android:inputType="date"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/date11" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" android:hint="@string/dateColumn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time11" android:inputType="date"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time1"
+            app:layout_constraintBaseline_toBaselineOf="@+id/appointment1" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date1" android:hint="@string/timeColumn"
+            android:importantForAutofill="no"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time2" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date2" app:layout_constraintTop_toBottomOf="@+id/time1"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time3" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date3" app:layout_constraintTop_toBottomOf="@+id/time2"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time4" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date4" app:layout_constraintTop_toBottomOf="@+id/time3"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time5"
+            app:layout_constraintTop_toBottomOf="@+id/time4" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date5"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time6"
+            app:layout_constraintTop_toBottomOf="@+id/time5" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date6"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time7"
+            app:layout_constraintTop_toBottomOf="@+id/time6" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date7" android:importantForAutofill="no"
+            android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time8"
+            app:layout_constraintTop_toBottomOf="@+id/time7" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date8" android:importantForAutofill="no"
+            android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time9"
+            app:layout_constraintTop_toBottomOf="@+id/time8" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date9" android:importantForAutofill="no"
+            android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time10"
+            app:layout_constraintTop_toBottomOf="@+id/time9" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date10" android:importantForAutofill="no"
+            android:hint="@string/timeColumn"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/time11" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/date11" app:layout_constraintTop_toBottomOf="@+id/time10"
+            android:importantForAutofill="no" android:hint="@string/timeColumn"/>
+</android.support.constraint.ConstraintLayout>
